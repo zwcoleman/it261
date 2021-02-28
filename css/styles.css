@@ -1,0 +1,147 @@
+/* styles for my website folder site */
+
+*{ 
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    background: darkcyan;
+}
+
+header {
+    background:whitesmoke;
+    height: 150px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding: 20px 0;
+    border-bottom: 1px solid cyan;
+}
+
+#logo {
+    width: 150px;
+    float: left;
+}
+
+.inner-header  {
+    width: 940px;
+    margin: 0 auto;
+    background: cyan;
+    
+}
+
+.active {
+    color:red;
+    font-weight: bold;
+}
+
+div a {
+    
+    text-decoration: none;
+}
+
+
+nav li {
+    float: left;
+    margin-left: 25px;
+    list-style-type: none;
+
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul {
+
+    float: right;
+}
+
+#wrapper {
+    width: 940px;
+    margin: 0 auto;
+    clear: both;
+}
+
+#hero {
+    
+    margin-bottom: 20px;
+}
+
+main {
+    width: 580px;
+    float:left;
+    margin-bottom: 20px;
+}
+
+aside {
+    width: 340px;
+    float: right;
+    margin-bottom: 20px;
+}
+footer {
+    height: 50px;
+    line-height: 50px;
+    clear: both;
+    
+}
+
+footer li {
+    float: left;
+    margin-right: 30px;
+     
+    list-style-type: none;
+    
+}
+/* FORM CSS */
+form {
+    max-width: 580px; 
+    margin: 20px auto;
+    
+}
+
+
+fieldset {
+    
+    padding: 10px;
+    }
+    
+label {
+        display: block;
+        margin-bottom: 10px;
+    }
+.err {
+
+        display: block;
+        color: #f00;
+        font-style:italic;
+        
+        }
+
+
+form ul{
+            list-style-type: none;
+            margin-bottom: 10px;
+        }
+        
+input, select, textarea {
+        
+            margin-bottom: 10px;
+            
+        }
+
+li a {
+    text-decoration: none;  
+}
+
+.screenshot{
+    max-width: 80%;
+    height: auto;
+}
+
+p{
+    margin-bottom: 20px;
+}
