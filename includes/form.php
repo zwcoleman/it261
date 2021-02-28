@@ -1,7 +1,7 @@
 
 
-        <h1>Contact Form</h1>
-<form style = "background-color: aliceblue; max-width: 400px; 
+        <h1 >Contact Form</h1>
+<form style = "background-color: aliceblue; max-width: 600 px; 
     margin: 20px auto;" action = "<?php echo $_SERVER['PHP_SELF'] ;?>" method = "post">
 <fieldset>
 <label>Name</label>
@@ -15,17 +15,17 @@ htmlspecialchars($_POST['name']); ?>">
 htmlspecialchars($_POST['lastName']); ?>">
 <span class = "err"><?php echo $lastNameErr;?></span> -->
 
-<label>Phone Number</label>
-<input type = "tel" name = "phone" placeholder = "xxx-xxx-xxxx"
-value = "<?php if(isset($_POST['phone'])) echo
-htmlspecialchars($_POST['phone']); ?>">
-<span class = "err"><?php echo $phoneErr;?></span>
-
 <label>Email</label>
 <input type = "email" name = "email" value = "<?php if(isset($_POST['email'])) echo
 htmlspecialchars($_POST['email']); ?>">
 <span class = "err"><?php echo $emailErr ;?></span>
 
+
+<label>Phone Number</label>
+<input type = "tel" name = "phone" placeholder = "xxx-xxx-xxxx"
+value = "<?php if(isset($_POST['phone'])) echo
+htmlspecialchars($_POST['phone']); ?>">
+<span class = "err"><?php echo $phoneErr;?></span>
 
 <!-- <label>Gender</label>
 <ul>
