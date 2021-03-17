@@ -41,13 +41,27 @@ if(isset($_SESSION['UserName'])) :?>
 
 </div>
 <?php endif; ?>
-<h1 class = "center">Screenshot of My Tables</h1>
-<p class = "center">
-    <img src="images/screenshot2.png" alt="screenshot">
-</p>
 
+
+<?php include('includes/form.php'); ?>
 </main>
+<aside>
+<p><h3>Sign-up to hear about your future home!</h3></p>
+         <?php
+$photos[0] = 'city1';
+$photos[1] = 'city2';
+$photos[2] = 'city3';
+$photos[3] = 'city4';
+$photos[4] = 'city5';
+$photos[5] = 'city6';
+$photos[6] = 'city7';
+$i = rand(0, 6);
+$selectedImage = 'images/'.$photos[$i].'.jpg';
+echo '<img width="500" src="'.$selectedImage.'" alt="'.$photos[$i].'">';
 
+?>
+
+</aside>
 </div><!--  end wrapper -->
 
 <?php

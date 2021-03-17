@@ -2,33 +2,82 @@
     padding:0;
     margin:0;
     box-sizing: border-box;
+    line-height: 1.5;
 }
 
 body.lightsteelblue {
-    background:lightsteelblue;
+    background:rgb(168, 191, 223);
 }
 
 body.azure {
-    background:azure;
+    background:rgb(194, 214, 160) ;
 }
 body.MediumOrchid {
-    background:MediumOrchid;
+    background:rgb(236, 193, 246);
 }
 body.darkkhaki {
-    background:darkkhaki;
+    background:rgb(231, 225, 141);
 }
 body.mypurple {
-    background:rgb(163, 163, 250);
+    background:rgb(168, 168, 248);
 }
 body.sandybrown {
-    background:sandybrown;
+    background:rgb(246, 187, 134);
 }
 body.bisque {
     background:bisque;
 }
+header {
+    background:azure;
+    height: auto;
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding: 20px 0;
+    border-bottom: 1px solid cyan;
+}
+
+#logo {
+    width: 150px;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.inner-header  {
+    width: 940px;
+    margin: 0 auto;
+    background: cyan;
+    
+}
+
+.active {
+    color:red;
+    font-weight: bold;
+}
+
+div a {
+    
+    text-decoration: none;
+}
+
+
+nav li {
+    float: left;
+    margin-left: 25px;
+    list-style-type: none;
+
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul {
+
+    float: right;
+}
 
 form {
-    max-width: 500px;
+    max-width: 300px;
     margin: 0 auto 20px auto;
 }
 
@@ -50,21 +99,24 @@ input[type=password] {
 #wrapper {
     width:940px;
     margin:0 auto;
+    
 }
 main {
     width: 580px;
-    float: left
+    float: left;
+    margin-bottom: 20px;
+    
 }
 aside {
     float: right;
-    width: 340px;
+    width: 300px;
+    font-size: x-small;
 }
 
 footer {
     height: 50px;
     line-height: 50px;
     clear: both;
-    
 }
 
 footer li {
@@ -88,6 +140,7 @@ footer li {
     right:10px;
     border:1px solid red;
     padding:10px;
+    background-color: orange;
 }
 
 .success {
@@ -96,7 +149,74 @@ footer li {
     left:10px;
     border:1px solid red;
     padding:10px;
+    background-color: yellow;
 }
 .center {
     text-align: center;
+}
+
+form {
+    max-width: 580px; 
+    margin: 20px auto;
+    
+}
+
+
+fieldset {
+    
+    padding: 10px;
+    }
+    
+label {
+        display: block;
+        margin-bottom: 10px;
+    }
+.err {
+
+        display: block;
+        color: #f00;
+        font-style:italic;
+        
+        }
+
+form ul{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+input, select, textarea {
+
+    margin-bottom: 10px;
+    
+}
+
+ li a {
+text-decoration: none;  
+}
+
+.list {
+    list-style-type: none;
+    
+}
+
+.screenshot{
+max-width: 80%;
+height: auto;
+}
+
+p{
+margin-bottom: 20px;
+}
+
+h1 {
+    color: tomato;
+}
+.flex-container {
+    display: flex;
+}
+.flex-box {
+    margin: 10px;
+    padding: 5px;
+    font-size: 12px;
+    border: 1px solid rgb(250, 118, 94);
 }

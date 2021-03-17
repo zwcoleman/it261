@@ -42,7 +42,7 @@ if(isset($_SESSION['UserName'])) :?>
 </div>
 <?php endif; ?>
 
-<h1>Welcom to our Daily Retirement Town page!</h1>
+<h1 class = "center">Daily Retirement Cities!</h1>
 <h2>
     <?php
    if($todayDate <=  11) {
@@ -52,21 +52,64 @@ if(isset($_SESSION['UserName'])) :?>
    } else {
        echo 'Good Evening! <br>';
    }   //end else
-echo $city;
+
+   echo $dailyCity;
 
 ?>
 </h2>
-<h3>Check out our Daily Retirement Towns below!</h3>
-<ul>
-<li><a href="daily.php?today=Monday">Monday</a></li>
-<li><a href="daily.php?today=Tuesday">Tuesday</a></li>
-<li><a href="daily.php?today=Wednesday">Wednesday</a></li>
-<li><a href="daily.php?today=Thursday">Thursday</a></li>
-<li><a href="daily.php?today=Friday">Friday</a></li>
-<li><a href="daily.php?today=Saturday">Saturday</a></li>
-<li><a href="daily.php?today=Sunday">Sunday</a></li>
-</ul>
 <p><?php echo $content;?></p>
+<h3>Check out our other great Cities for Retirees below!</h3>
+<ul>
+<li><a style = "color: <?php 
+    if($today== 'Monday'){
+        echo'moccasin';
+    }  else{
+        echo'blue';
+    }; ?>" href="daily.php?today=Monday">Monday</a></li>
+
+<li><a style = "color: <?php 
+    if($today== 'Tuesday'){
+        echo'forestgreen';
+    }  else{
+        echo'blue';
+    }; ?>" href="daily.php?today=Tuesday">Tuesday</a></li>
+
+<li><a style = "color: <?php 
+    if($today== 'Wednesday'){
+        echo'moccasin';
+    }  else{
+        echo'blue';
+    }; ?>" href="daily.php?today=Wednesday">Wednesday</a></li>
+
+<li><a style = "color: <?php 
+    if($today== 'Thursday'){
+        echo'forestgreen';
+    }  else{
+        echo'blue';
+    }; ?>" href="daily.php?today=Thursday">Thursday</a></li>
+
+<li><a style = "color: <?php 
+    if($today== 'Friday'){
+        echo'moccasin';
+    }  else{
+        echo'blue';
+    }; ?>" href="daily.php?today=Friday">Friday</a></li>
+
+<li><a style = "color: <?php 
+    if($today== 'Saturday'){
+        echo'forestgreen';
+    }  else{
+        echo'blue';
+    }; ?>" href="daily.php?today=Saturday">Saturday</a></li>
+
+<li><a style = "color: <?php 
+    if($today== 'Sunday'){
+        echo'moccasin';
+    }  else{
+        echo'blue';
+    }; ?>" href="daily.php?today=Sunday">Sunday</a></li>
+</ul>
+
 </main>
 <aside>
 <h3></h3>

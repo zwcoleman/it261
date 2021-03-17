@@ -41,14 +41,33 @@ if(isset($_SESSION['UserName'])) :?>
 
 </div>
 <?php endif; ?>
-<h1 class = "center">Screenshot of My Tables</h1>
-<p class = "center">
-    <img src="images/screenshot2.png" alt="screenshot">
-</p>
 
+<div id = "wrapper">
+<main>
+<h1 class = "center">
+Thank you! </h1>
+<h2 id = "center">Your Newsletter is on the way!!</h2>
 </main>
 
-</div><!--  end wrapper -->
+<aside>
+
+           <?php
+$photos[0] = 'city1';
+$photos[1] = 'city2';
+$photos[2] = 'city3';
+$photos[3] = 'city4';
+$photos[4] = 'city5';
+$photos[5] = 'city6';
+$photos[6] = 'city7';
+$i = rand(0, 6);
+$selectedImage = 'images/'.$photos[$i].'.jpg';
+echo '<img width="500" height="500" src="'.$selectedImage.'" alt="'.$photos[$i].'">';
+?>
+
+    </aside>
+
+    </div> <!--  end wrapper -->
+
 
 <?php
 include('includes/footer.php');
